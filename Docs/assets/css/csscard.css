@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color:lightgray;
+}
+
+.card {
+    margin-top: 10vh;
+    padding:2em;
+    width:400px;
+    height:450px;
+    background-color:black;
+    border-radius: 10%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card p {
+    margin-top: 1vh;
+}
+
+main {
+    display:flex;
+    justify-content: center; /* center it */
+}
+
+.card h1, .card p {
+    color:white;
+}
+
+.card:hover {
+    animation: 3s infinite alternate leftandright;
+}
+
+@keyframes leftandright {
+    from {
+
+    }
+    to {
+
+    }
+}
+
+#imgcard {
+    width:60%;
+    height:40%;
+    padding:1em;
+}

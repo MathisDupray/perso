@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #horloge {
+            background-color: lightblue;
+            height:300px;
+            width:300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Réalisation d'une petite horloge</h1>
+
+<div id="exercice">
+
+<p>Le but de cet exercice est de réaliser une petite horloge tournante (certes pas en temps réel&nbsp;!).</p>
+<ol>
+	<li>Télécharger le fichier <a href="exo14vide.html">exo14vide.html</a>.</li>
+	<li>Ajouter un bouton à la fin du paragraphe. Ce bouton lance l'horloge en appelant la fonction <code>tourne()</code></li>
+	<li>Créer deux variables globales, <code>compteur_minutes</code> et <code>compteur_heures</code>, initialisées à 0.</li>
+	<li>Identifier les éléments correspondant à chaque image.</li>
+	<li><p>Selon la valeur de <code>compteur_minutes</code>, changer ses propriétés de position&nbsp;:</p>
+		<ul>
+			<li>quand le compteur vaut 0, attribuer à l'image aiguilleminute la position de l'élément chiffre1&nbsp;;</li>
+			<li>quand le compteur vaut 1, attribuer à l'image aiguilleminute la position de l'élément chiffre2&nbsp;;</li>
+			<li>quand le compteur vaut 2, attribuer à l'image aiguilleminute la position de l'élément chiffre3...</li>
+		</ul>
+		<p>... ainsi de suite jusqu'à la valeur de compteur 11, auquel cas on attribue à l'image aiguilleminute la position de l'élément chiffre12.</p>
+	</li>
+	<li>Incrémenter le compteur_minutes, et lui affecter le reste de sa division euclidienne par 12.</li>
+	<li>Temporiser un appel à la fonction toutes les secondes (par un appel à la méthode <code>window.setTimeout(nom_fonction, temps_en_millisecondes)</code>.</li>
+</ol>
+
+<p>Il reste maintenant à faire tourner l'aiguille "des heures".</p>
+<ol>
+	<li>Juste après avoir changé la valeur du compteur, tester si l'aiguille des minutes est en 12 (cela se fait par un test sur la valeur du compteur). Si cela est le cas, alors reprendre la même procédure que précédemment pour le déplacement de l'aiguille des minutes, mais cette fois-ci appliquée à celle des heures, en n'oublient pas d'incrémenter le compteur des heures.</li>
+</ol>
+
+<p>Ajouter un bouton permettant d'arrêter l'horloge (on fera appel à un booléen).</p>
+
+</div>
+    <div id="horloge">
+        <div id="h_0">0</div>
+        <div id="h_1">1</div>
+        <div id="h_2">2</div>
+        <div id="h_3">3</div>
+        <div id="h_4">4</div>
+        <div id="h_5">5</div>
+        <div id="h_6">6</div>
+        <div id="h_7">7</div>
+        <div id="h_8">8</div>
+        <div id="h_9">9</div>
+        <div id="h_10">10</div>
+        <div id="h_11">11</div>
+        <div id="aiguillemin"></div>
+        <div id="aiguillesec"></div>
+    </div>
+    <button id="start_button" type="submit">Start</button>
+</body>
+<script src="./../js/horloge.js"></script>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau JS</title>
+</head>
+<style>
+    td {
+        padding:2em;
+        border:2px solid black;
+    }
+
+    #addition_button {
+        padding : 2em;
+    }
+</style>
+<body>
+    <h1>Utilisation d'un tableau</h1>
+
+<p>Sauvegardez le fichier <a href="exo43vide.html">exo43vide.html</a>.</p>
+
+<h2>Appel à une fonction retournant une valeur</h2>
+<ol>
+	<li id="premier">Créez un tableau nommé <var>tab</var> dont le premier élément est -2, le deuxième 1 et le troisième 4</li>
+	<li>Créez une fonction <code>additionne</code> prenant un argument <var>x</var> et renvoyant le résultat de l'addition de <var>x</var> à 2</li>
+	<li id="dernier">Créez une fonction <code>affiche</code>, appelée au clic sur le bouton, qui affiche dans des boîtes d'alerte successivement le résultat de <code>additionne</code> appliqué au premier élément, puis au dernier élément du tableau (en utilisant la propriété <code>length</code>).</li>
+</ol>
+<!-- ------- -->
+<table>
+    <td>-2</td>
+    <td>1</td>
+    <td>4</td>
+</table>
+<button id="addition_button" type="submit">Bouton magique</button>
+</body>
+<script src="./../js/tableau.js"></script>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h1>Écriture d'une fonction complexe</h1>
+
+<p>Sauvegardez le fichier <a href="exo29vide.html">exo29vide.html</a>.</p>
+
+<h2>Appel à une fonction retournant une valeur</h2>
+<ol>
+	<li>Créez une fonction qui&nbsp;:
+		<ul>
+			<li>demande la saisie d'un rayon&nbsp;;</li>
+			<li>retourne la surface du cercle de ce rayon</li>
+		</ul>
+	</li>
+	<li>Affichez le résultat de l'appel à cette fonction en cliquant sur le bouton.</li>
+</ol>
+<button id="submit" type="submit">Appel fct 1</button>
+
+<h2>Calcul de la longueur d'un côté de triangle rectangle</h2>
+<p>On considère sur le cercle un point M&nbsp;:</p>
+<p><img src="./../assets/images/exo29.png" alt="Cercle de rayon R, diamètre AB, point M d'abscisse x sur le cercle dans le quadrant supérieur droit"></p>
+<ol>
+	<li>Montrez que AM<sup>2</sup>=2R(R+x).</li>
+	<li>Créez une fonction prenant comme paramètre <var>R</var> et <var>x</var> et retournant la valeur de AM.</li>
+	<li>Créez une fonction qui&nbsp;:
+		<ul>
+			<li>crée un tableau de valeurs de x pour x=R, R/2, 0, -R/2 et -R.</li>
+			<li>déclare un tableau y de longueur 5</li>
+			<li>affecte à chaque élément de y la valeur retournée par la fonction calculant AM pour chaque valeur de x</li>
+			<li>retourne le tableau y</li>
+		</ul>
+	</li>
+	<li>affichez le tableau résultat au clic sur le bouton. Que se passe-t-il&nbsp;? Pourquoi&nbsp;?</li>
+</ol>
+<button id="submit2" type="submit">Appel fct 2</button>
+<h2>Création d'un tableau à deux dimensions</h2>
+<p>Modifiez la fonction précédente de manière à ce qu'elle retourne un tableau à deux dimensions avec les couples (x,y).</p>
+</body>
+<script src="./../js/fctcomplexe.js"></script>
+</html>
